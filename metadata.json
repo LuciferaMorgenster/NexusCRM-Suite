@@ -1,0 +1,6 @@
+{
+  "name": "NexusCRM Suite",
+  "description": "Enterprise multilingual Customer Relationship Management (CRM) platform seamlessly connected with RosterSync Pro, TalentPulse HRIS, Kopilot Projects, and BoekhoudGemak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
