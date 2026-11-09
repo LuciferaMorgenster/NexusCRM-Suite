@@ -10,6 +10,7 @@ import { ActivitiesView } from './components/ActivitiesView';
 import { AppSwitcherModal } from './components/AppSwitcherModal';
 import { SeoInspectModal } from './components/SeoInspectModal';
 import { NewRecordModal } from './components/NewRecordModal';
+import { OfflineIndicator } from './components/OfflineIndicator';
 import { 
   initialAccounts, 
   initialDeals, 
@@ -683,6 +684,9 @@ function CrmAppContent() {
         onAddActivity={handleAddActivity}
         defaultTab={newRecordTab}
       />
+
+      {/* PWA Offline Banner */}
+      <OfflineIndicator />
     </div>
   );
 }

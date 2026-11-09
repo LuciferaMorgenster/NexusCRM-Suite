@@ -11,6 +11,7 @@ import {
   Share2, 
   LayoutGrid
 } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface TopNavProps {
   currentTab: string;
@@ -156,6 +157,9 @@ export const TopNav: React.FC<TopNavProps> = ({
           >
             {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
+
+          {/* PWA In-App Install Button */}
+          <PWAInstallButton />
 
           {/* Multilingual Selector Dropdown */}
           <div className="relative">

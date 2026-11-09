@@ -166,7 +166,7 @@ export const SeoInspectModal: React.FC<SeoInspectModalProps> = ({
                 <div className="p-4 space-y-1.5">
                   <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
                     <Globe className="w-3 h-3" />
-                    <span>nexuscrm.internal · lang={language}</span>
+                    <span>nexuscrm-suite.lucifera.eu · lang={language}</span>
                   </div>
                   <h3 className="text-sm font-bold text-slate-900 dark:text-white leading-snug">
                     {t.seo.ogTitle}

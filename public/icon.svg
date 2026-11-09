@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer subtle border -->
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#312e81" stroke-width="6" opacity="0.6" />
+
+  <!-- Interconnected Ecosystem Node Rings -->
+  <!-- Top Left: RosterSync (Indigo) -->
+  <circle cx="140" cy="140" r="16" fill="#6366f1" opacity="0.85" />
+  <!-- Top Right: TalentPulse (Emerald) -->
+  <circle cx="372" cy="140" r="16" fill="#10b981" opacity="0.85" />
+  <!-- Bottom Left: Kopilot (Sky) -->
+  <circle cx="140" cy="372" r="16" fill="#0ea5e9" opacity="0.85" />
+  <!-- Bottom Right: BoekhoudGemak (Amber) -->
+  <circle cx="372" cy="372" r="16" fill="#f59e0b" opacity="0.85" />
+
+  <!-- Connecting Node Lines -->
+  <path d="M 140 140 L 256 256 L 372 140" stroke="#4f46e5" stroke-width="4" stroke-dasharray="6,6" opacity="0.4" fill="none" />
+  <path d="M 140 372 L 256 256 L 372 372" stroke="#4f46e5" stroke-width="4" stroke-dasharray="6,6" opacity="0.4" fill="none" />
+
+  <!-- Central Nexus Monogram 'N' with futuristic angles -->
+  <g filter="url(#glow)">
+    <!-- Left vertical bar -->
+    <path d="M 176 156 L 220 156 L 220 356 L 176 356 Z" fill="url(#indigoGrad)" rx="8" />
+    <!-- Diagonal cross bar -->
+    <path d="M 212 156 L 300 356 L 336 356 L 248 156 Z" fill="#6366f1" opacity="0.95" />
+    <!-- Right vertical bar -->
+    <path d="M 292 156 L 336 156 L 336 356 L 292 356 Z" fill="url(#indigoGrad)" rx="8" />
+  </g>
+
+  <!-- Central Pulse Orb -->
+  <circle cx="256" cy="256" r="14" fill="#ffffff" />
+  <circle cx="256" cy="256" r="24" fill="none" stroke="#818cf8" stroke-width="3" opacity="0.8" />
+</svg>
